@@ -1,0 +1,329 @@
+<!--
+Filename: mobilesite.html
+Authors name: Graydon Armstrong
+Website name: Graydon Web Design Mobile
+File Description: The mobile version of the website. It includes the 5 pages of the website which are: Home, About Me, Contact Me, Products, Services
+-->
+<!DOCTYPE html>
+<html>
+
+<!--
+ head section where we link the jquery mobile files
+-->
+<head>
+	<title>jQuery Mobile Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/GraydonWeb.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>	
+</head>
+
+<body>
+
+<!--
+  The Homepage Which has the slider on it
+-->
+<div data-role="page" id="home">
+  <div data-role="header"data-theme="d">
+  	<div style="text-align : center;">
+  		<img src="img/logo.png" height=32 width=32></img>
+    </div>
+    <h1 style="color:#FFFFFF;">Graydon Web Design</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" class="ui-btn-active ui-state-persist" data-theme="d" data-icon="home">Home</a></li>
+      <li><a href="#aboutme"data-theme="d" data-icon="info">About Me</a></li>
+      <li><a href="#contact"data-theme="d" data-icon="search">Contact Me</a></li>
+    </ul>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#projects" data-theme="d" data-icon="grid">Projects</a></li>
+      <li><a href="#services" data-theme="d" data-icon="gear">Services</a></li>
+    </ul>
+  </div>
+  <section role="main" class="ui-content">
+  
+  <ul class="projects-slider" data-orbit>
+	<li>
+		<img src="img/animation.png" alt="slide 1" width=500 height=200/>
+		<div class="orbit-caption">
+		  2D Animation Tools Restaurant Lab.
+		</div>
+	</li>
+	<li>
+		<img src="img/finance.png" alt="slide 2" width=500 height=200/>
+		<div class="orbit-caption">
+		  Personal Finance Expenses Tracker.
+		</div>
+	</li>
+	<li>
+		<img src="img/pythongame.png" alt="slide 3" width=500 height=200/>
+		<div class="orbit-caption">
+		  Graphics Programming Python Game.
+		</div>
+	</li>
+  </ul>
+  
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  
+  </section>
+  <div data-role="footer" data-theme="d" data-position="fixed">
+    <h4 style="color:#FFFFFF;">&copy Graydons Web Design 2014</h4>
+	<h4><a href="index.php?version=full" data-ajax="false">Full Site</a></h4>
+  </div>
+</div>
+
+<!--
+ The about me page
+-->
+<div data-role="page" id="aboutme">
+  <div data-role="header"data-theme="d">
+	<div style="text-align : center;">
+  		<img src="img/logo.png" height=32 width=32></img>
+    </div>
+    <h1 style="color:#FFFFFF;">Graydon Web Design</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="mobilesite.html" data-theme="d" data-icon="home" data-ajax="false">Home</a></li>
+      <li><a href="#aboutme" class="ui-btn-active ui-state-persist" data-theme="d" data-icon="info">About Me</a></li>
+      <li><a href="#contact"data-theme="d" data-icon="search">Contact Me</a></li>    
+      </ul>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#projects" data-theme="d" data-icon="grid">Projects</a></li>
+      <li><a href="#services" data-theme="d" data-icon="gear">Services</a></li>
+    </ul>
+  </div>
+  <div data-role="content">
+	<h4>Personal Tagline</h4>
+	<p>Graydon Armstrong, Web Design Extraordinaire.</p>
+	<h4>Mission Statement</h4>
+	<p>I am a Programming Analyst Student who aspires to run my own business. I want to do web design and programming for clients that is regarded as professional and of high quality. I enjoy programming and the challenges that it gives me from day to day.</p>
+	<img class="shadow_image" src="img/self_image.JPG" width=160 >
+	<hr />
+	<h4>Resume</h4>
+	<h5>Summary of Skills</h5>
+	<ul>
+		<li>Competent with standard office applications such as: Microsoft Word, Excel, Powerpoint, Outlook</li>
+		<li>Academic Experience with: HTML, CSS, ASP.NET, C#, Python, Java, PHP, SQL, DB2, Visual Basic</li>
+		<li>Industry experience with computer hardware & software doing tasks such as: building my own computer, setting up a home network, O/S installations, deploying hardware for departments & classrooms, troubleshooting for staff and students</li>
+		<li>Familiar and knowledgeable with operating systems: Windows XP, Windows 7, Windows 8, Linux, Mac OS X</li>
+		<li>Full G License</li>
+	</ul>
+	
+	<h5>Education</h5>
+	<p>Georgian College, Barrie, Ontario <br/>
+	Computer Programmer Analyst - Co-op Program, 3 Year Course<br/>
+	Courses include:</p>
+	<ul>
+		<li>Web Programming, Advanced Java, Advanced Databases, System Analysis and Design, Web Design, Rapid Application Dev</li>
+		<li>Academic Deans List - 92 Percent Average</li>
+	</ul>
+	<h5>Job Experience</h5>
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+			<p>Company:<br/>
+			Position:<br/>
+			Date Worked:<br/></p>
+			<p>Company:<br/>
+			Position:<br/>
+			Date Worked:<br/></p>
+			<p>Company:<br/>
+			Position:<br/>
+			Date Worked:<br/></p>
+			<p>Company:<br/>
+			Position:<br/>
+			Date Worked:<br/></p>
+			<p>Company:<br/>
+			Position:<br/>
+			Date Worked:<br/></p>	
+		</div>
+		<div class="ui-block-b">
+			<p>Geddasoft Inc<br/>
+			Programmer<br/>
+			Sept 2013 - Dec 2013<br/></p>
+			<p>Air Command Academy Base Borden<br/>
+			Courseware Programming Assistant<br/>
+			Jan 2013 - Apr 2013<br/></p>
+			<p>Georgian College<br/>
+			Level 2 Desktop Technician<br/>
+			May 2012 - Aug 2012<br/></p>
+			<p>Mcdonalds<br/>
+			Assembler/Maintenance<br/>
+			April 2011 - Present<br/></p>
+			<p>Armstrong Trailers<br/>
+			Delivery/Service/Maintenance<br/>
+			May 2004 - Present<br/></p>			
+		</div>
+	</div>
+  </div>
+  <div data-role="footer" data-theme="d"data-position="fixed">
+    <h4 style="color:#FFFFFF;">&copy Graydons Web Design 2014</h4>
+	<h4><a href="aboutme.php?version=full" data-ajax="false">Full Site</a></h4>
+  </div>
+</div>
+
+<!--
+ The contact me page
+-->
+<div data-role="page" id="contact">
+  <div data-role="header"data-theme="d">
+	<div style="text-align : center;">
+  		<img src="img/logo.png" height=32 width=32></img>
+    </div>
+    <h1 style="color:#FFFFFF;">Graydon Web Design</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="mobilesite.html" data-theme="d" data-icon="home" data-ajax="false">Home</a></li>
+      <li><a href="#aboutme"data-theme="d" data-icon="info">About Me</a></li>
+      <li><a href="#contact" class="ui-btn-active ui-state-persist" data-theme="d" data-icon="search">Contact Me</a></li>
+    </ul>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#projects" data-theme="d" data-icon="grid">Projects</a></li>
+      <li><a href="#services" data-theme="d" data-icon="gear">Services</a></li>
+    </ul>
+  </div>
+  <div data-role="content">
+
+	<h1>Contact Me</h1>
+	<hr />
+	<h4>Contact Information</h4>
+
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+			<p>Email Address:</p>
+		</div>
+		<div class="ui-block-b">	
+			<p>graydon.armstrong@madeupemail.com</p>
+		</div>
+	</div>
+	
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+			<p>Work Address:</p>
+		</div>
+		<div class="ui-block-b">	
+			<p>555 Smith Street, Barrie, Ontario, Canada</p>
+		</div>
+	</div>
+	
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+			<p>Phone Number:</p>
+		</div>
+		<div class="ui-block-b">	
+			<p><a href="tel:17057185555">1-(705)-718-5555</a></p>
+		</div>
+	</div>
+	
+	<h4>Stay Connected</h4>
+	<a href="https://www.facebook.com/graydon.arm"><img src="webicons/webicon-facebook-s.png"></img></a>
+	<a href="https://twitter.com/Graydon_Arm"><img src="webicons/webicon-twitter-s.png"></img></a>
+	<a href="#" class="webicon linkedin"><img src="webicons/webicon-linkedin-s.png"></img></a>
+  </div>
+  <div data-role="footer" data-theme="d"data-position="fixed">
+    <h4 style="color:#FFFFFF;">&copy Graydons Web Design 2014</h4>
+	<h4><a href="contactme.php?version=full" data-ajax="false">Full Site</a></h4>
+  </div>
+</div>
+
+<!--
+ The projects page
+-->
+<div data-role="page" id="projects">
+  <div data-role="header"data-theme="d">
+	<div style="text-align : center;">
+  		<img src="img/logo.png" height=32 width=32></img>
+    </div>
+    <h1 style="color:#FFFFFF;">Graydon Web Design</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="mobilesite.html" data-theme="d" data-icon="home" data-ajax="false">Home</a></li>
+      <li><a href="#aboutme"data-theme="d" data-icon="info">About Me</a></li>
+      <li><a href="#contact" data-theme="d" data-icon="search">Contact Me</a></li>
+    </ul>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#projects" class="ui-btn-active ui-state-persist" data-theme="d" data-icon="grid">Projects</a></li>
+      <li><a href="#services" data-theme="d" data-icon="gear">Services</a></li>
+    </ul>
+  </div>
+  <div data-role="content">
+    <h1>Projects</h1>
+	<hr />
+	<h4>2D Animation Tools</h4>
+	<p>This is a lab that we worked on in class to learn how to do a basic interactive flash page. It had us using lots of motion tweens and manipulating images to make the page interative.</p>
+	<a href="animation.html"><img class="shadow_image" src="img/animation.png" width=256 height=256></a>
+	<h4>Personal Finance</h4>
+	<p>This assignment for my personal finance class has us keeping track of all our expenses so that we can learn how to budget. This is our first month of tracking, so we dont yet have an idea of how our spending will change from month to month yet. The next few months of tracking will teach us how to monitor our spending and budget approprietly for the next month.</p>
+	<a href="https://www.dropbox.com/s/u1y8kt4wglu5k6d/January%20Expense%20tracker.xlsx"><img class="shadow_image" src="img/finance.png" width=256 height=256></a>
+	<h4>Graphics Programming</h4>
+	<p>This is a graphics programming assignment from last semester where we had to make a small game in python. I decided to try and recreate space invaders with the twist of different classes of enemies that are each harder to kill than the last. We used python with the help of Aptana Studio 3 to create our games with the help of the pygame framework.</p>
+	<a href="https://github.com/graydon-armstrong/FinalProject"><img class="shadow_image" src="img/pythongame.png" width=256 height=256></a>
+  </div>
+  <div data-role="footer" data-theme="d"data-position="fixed">
+    <h4 style="color:#FFFFFF;">&copy Graydons Web Design 2014</h4>
+	<h4><a href="projects.php?version=full" data-ajax="false">Full Site</a></h4>
+  </div>
+</div>
+
+<!--
+  The services page
+-->
+<div data-role="page" id="services">
+  <div data-role="header"data-theme="d">
+	<div style="text-align : center;">
+  		<img src="img/logo.png" height=32 width=32></img>
+    </div>
+    <h1 style="color:#FFFFFF;">Graydon Web Design</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="mobilesite.html" data-theme="d" data-icon="home" data-ajax="false">Home</a></li>
+      <li><a href="#aboutme"data-theme="d" data-icon="info">About Me</a></li>
+      <li><a href="#contact" data-theme="d" data-icon="search">Contact Me</a></li>
+    </ul>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#projects" data-theme="d" data-icon="grid">Projects</a></li>
+      <li><a href="#services" class="ui-btn-active ui-state-persist" data-theme="d" data-icon="gear">Services</a></li>
+    </ul>
+  </div>
+  <div data-role="content">
+	<h1>Services</h1>
+	<hr />
+	<h4>Web Design</h4>
+	<p>I offer web design services that range from static sites, to content management systems and e-commerce websites. With meticulous work put into design and functionality, websites produced by our company will be engaging and memorable. We are competent in all current web design practices such as HTML5 and responsive design, which will help us to deliver a long lasting website with broad appeal.</p>
+	<img class="shadow_image" src="img/webdesign.jpg" width=256 height=256>
+	<h4>Developement</h4>
+	<p>We offer programming and development services to add functionality to your existing websites. We are willing to expand a static website to include e-commerce or other services to help expand your business into the global market. We are also able to develop web applications that you can use to run your business.</p>
+	<img class="shadow_image" src="img/development.jpg" width=256 height=256>
+	<h4>Branding</h4>
+	<p>We offer branding services to help bring a single image for your entire company. We will design a brand for you that will be in sync from your website to your business cards.</p>
+	<img class="shadow_image" src="img/branding.jpg" width=256 height=256>
+  </div>
+  <div data-role="footer"data-theme="d"data-position="fixed">
+    <h4 style="color:#FFFFFF;">&copy Graydons Web Design 2014</h4>
+	<h4><a href="services.php?version=full" data-ajax="false">Full Site</a></h4>
+  </div>
+</div>
+
+</body>
+</html>
