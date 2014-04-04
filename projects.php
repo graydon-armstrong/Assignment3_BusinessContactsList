@@ -4,7 +4,7 @@ Authors name: Graydon Armstrong
 Website name: Graydon Web Design
 File Description: This is the projects page. It has information and pictures about 3 of my assignments. There are also links to those 3 projects if you click the pictures.
 -->
-
+<?php session_start();?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 

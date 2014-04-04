@@ -4,7 +4,7 @@ Authors name: Graydon Armstrong
 Website name: Graydon Web Design
 File Description: This is my services page. It has information with pictures about various services I offer.
 -->
-
+<?php session_start();?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 

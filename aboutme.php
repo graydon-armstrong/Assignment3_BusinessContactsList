@@ -4,7 +4,7 @@ Authors name: Graydon Armstrong
 Website name: Graydon Web Design
 File Description: The is my about me page. It has a short bio about me with a recent picture of me. There is also a Resume on the page in HTML formatting.
 -->
-
+<?php session_start();?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 

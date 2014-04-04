@@ -4,7 +4,7 @@ Authors name: Graydon Armstrong
 Website name: Graydon Web Design
 File Description: The home page for the website. Has the tag and mission statements, a more work button, and a slider
 -->
-<?php session_start() ?>
+<?php session_start();?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
