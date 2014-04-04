@@ -5,6 +5,9 @@ Website name: Graydon Web Design
 File Description: This is the header that is included on everypage. It includes the top bar and all the nav links inside it. There is also a php function to get the current page thats loaded and to set the id of current page to the nav button that applies.
 -->
 
+<!--
+Use a script to check if the user is on a mobile device and send them to the mobile site if they have not chosen the full site link
+-->
 <script>
 window.mobilecheck = function() {
 var check = false;
@@ -39,6 +42,26 @@ else
 		</br>
 	<div class="large-12 columns">
 		<img src="img/logo.png" width=64 height=64>
+		<p>
+			<?php 
+				//if user is logged in show they are logged in and have a logout link, otherwise show a login link
+				if (isset($_SESSION['user_id'])) {
+					if (isset($_SESSION['version'])) {
+						echo'Userid: ' . $_SESSION['user_id'] . ' | <a href="logout.php?version=full">Logout</a>';
+					} else {
+						echo'Userid: ' . $_SESSION['user_id'] . ' | <a href="logout.php">Logout</a>';
+					}
+				} else {
+					if (isset($_SESSION['version'])) {
+						echo '<a href="login.php?version=full">Login</a>';
+					} else {
+						echo '<a href="login.php">Login</a>';
+					}
+				}
+
+
+			?>
+		</p>
 	</div>
 </div>
 
